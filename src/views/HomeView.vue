@@ -20,6 +20,8 @@
     color="white"
     class="mt-8"
   />
+
+  <TheNewProducts class="mt-8" />
 </template>
 
 <script setup>
