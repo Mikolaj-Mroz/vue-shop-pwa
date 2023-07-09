@@ -4,30 +4,27 @@ import { defineStore } from 'pinia'
 export const useProductsStore = defineStore('products', () => {
   const categories = ref([
     {
-      type: 'for him',
+      title: 'for him',
       subcategories: [
-        { title: 'tops', photo: 'https://picsum.photos/300/300' },
-        { title: 'bottoms', photo: 'https://picsum.photos/300/300' },
-        { title: 'shoes', photo: 'https://picsum.photos/300/300' },
-        { title: 'accessories', photo: 'https://picsum.photos/300/300' }
+        { title: 'tops', image: '/categories/man-tops.jpg' },
+        { title: 'bottoms', image: '/categories/man-bottoms.jpg' },
+        { title: 'shoes', image: '/categories/man-shoes.jpg' }
       ]
     },
     {
-      type: 'for her',
+      title: 'for her',
       subcategories: [
-        { title: 'tops', photo: 'https://picsum.photos/300/300' },
-        { title: 'bottoms', photo: 'https://picsum.photos/300/300' },
-        { title: 'shoes', photo: 'https://picsum.photos/300/300' },
-        { title: 'accessories', photo: 'https://picsum.photos/300/300' }
+        { title: 'tops', image: '/categories/woman-tops.jpg' },
+        { title: 'bottoms', image: '/categories/woman-bottoms.jpg' },
+        { title: 'shoes', image: '/categories/woman-shoes.jpg' }
       ]
     },
     {
-      type: 'for kids',
+      title: 'for kids',
       subcategories: [
-        { title: 'tops', photo: 'https://picsum.photos/300/300' },
-        { title: 'bottoms', photo: 'https://picsum.photos/300/300' },
-        { title: 'shoes', photo: 'https://picsum.photos/300/300' },
-        { title: 'accessories', photo: 'https://picsum.photos/300/300' }
+        { title: 'tops', image: '/categories/kid-tops.jpg' },
+        { title: 'bottoms', image: '/categories/kid-bottoms.jpg' },
+        { title: 'shoes', image: '/categories/kid-shoes.jpg' }
       ]
     }
   ])
