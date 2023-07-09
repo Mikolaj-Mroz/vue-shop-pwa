@@ -1,6 +1,6 @@
 <template>
-  <v-bottom-navigation active color="primary">
-    <v-btn>
+  <v-bottom-navigation tag="footer" active color="primary">
+    <v-btn to="/">
       <v-icon>mdi-home-outline</v-icon>
     </v-btn>
 
@@ -8,7 +8,7 @@
       <v-icon>mdi-heart-outline</v-icon>
     </v-btn>
 
-    <v-btn>
+    <v-btn to="/cart">
       <v-icon>mdi-cart-outline</v-icon>
     </v-btn>
 
