@@ -4,7 +4,7 @@ import { defineStore } from 'pinia'
 export const useProductsStore = defineStore('products', () => {
   const categories = ref([
     {
-      title: 'for him',
+      title: 'For Him',
       subcategories: [
         { title: 'tops', image: '/categories/man-tops.jpg' },
         { title: 'bottoms', image: '/categories/man-bottoms.jpg' },
@@ -12,7 +12,7 @@ export const useProductsStore = defineStore('products', () => {
       ]
     },
     {
-      title: 'for her',
+      title: 'For Her',
       subcategories: [
         { title: 'tops', image: '/categories/woman-tops.jpg' },
         { title: 'bottoms', image: '/categories/woman-bottoms.jpg' },
@@ -20,7 +20,7 @@ export const useProductsStore = defineStore('products', () => {
       ]
     },
     {
-      title: 'for kids',
+      title: 'For Kids',
       subcategories: [
         { title: 'tops', image: '/categories/kid-tops.jpg' },
         { title: 'bottoms', image: '/categories/kid-bottoms.jpg' },
@@ -31,33 +31,89 @@ export const useProductsStore = defineStore('products', () => {
 
   const products = ref([
     {
-      id: 1,
-      name: 'Product 1',
-      price: 100,
-      img: 'https://picsum.photos/300/300',
-      category: 'Category 1'
+      "name": "Stellar Denim Jacket",
+      "price": 79.99,
+      "image": "/products/stellar-denim-jacket.jpg",
+      "category": "For Him",
+      "subcategory": "Tops"
     },
     {
-      id: 2,
-      name: 'Product 2',
-      price: 300,
-      img: 'https://picsum.photos/300/300',
-      category: 'Category 1'
+      "name": "Harmony Knit Sweater",
+      "price": 59.99,
+      "image": "/products/harmony-knit-sweater.jpg",
+      "category": "For Her",
+      "subcategory": "Tops"
     },
     {
-      id: 3,
-      name: 'Product 3',
-      price: 300,
-      img: 'https://picsum.photos/300/300',
-      category: 'Category 2'
+      "name": "Radiant Sun Dress",
+      "price": 89.99,
+      "image": "/products/radiant-sun-dress.jpg",
+      "category": "For Her",
+      "subcategory": "Tops"
     },
     {
-      id: 4,
-      name: 'Product 4',
-      price: 400,
-      img: 'https://picsum.photos/300/300',
-      category: 'Category 2'
-    }
+      "name": "Nova Active Leggings",
+      "price": 69.99,
+      "image": "/products/nova-active-leggings.jpg",
+      "category": "For Her",
+      "subcategory": "Bottoms"
+    },
+    {
+      "name": "Blissful Linen Shirt",
+      "price": 79.99,
+      "image": "/products/blissful-linen-shirt.jpg",
+      "category": "For Him",
+      "subcategory": "Tops"
+    },
+    {
+      "name": "Cascade Waterfall Cardigan",
+      "price": 69.99,
+      "image": "/products/cascade-waterfall-cardigan.jpg",
+      "category": "For Her",
+      "subcategory": "Tops"
+    },
+    {
+      "name": "Celestial Pleated Skirt",
+      "price": 59.99,
+      "image": "/products/celestial-pleated-skirt.jpg",
+      "category": "For Her",
+      "subcategory": "Bottoms"
+    },
+    {
+      "name": "Aurora Performance Shorts",
+      "price": 34.99,
+      "image": "/products/aurora-performance-shorts.jpg",
+      "category": "For Him",
+      "subcategory": "Bottoms"
+    },
+    {
+      "name": "Euphoria Embroidered Blouse",
+      "price": 59.99,
+      "image": "/products/euphoria-embroidered-blouse.jpg",
+      "category": "For Kids",
+      "subcategory": "Tops"
+    },
+    {
+      "name": "Oasis Hiking Shoes",
+      "price": 89.99,
+      "image": "/products/oasis-hiking-shoes.jpg",
+      "category": "For Kids",
+      "subcategory": "Shoes"
+    },
+    {
+      "name": "Essence Bamboo Socks",
+      "price": 19.99,
+      "image": "/products/essence-bamboo-socks.jpg",
+      "category": "For Kids",
+      "subcategory": "Socks"
+    },
+    {
+      "name": "Nova Sportswear Bra",
+      "price": 29.99,
+      "image": "/products/nova-sportswear-bra.jpg",
+      "category": "For Her",
+      "subcategory": "Tops"
+    },
   ])
 
   return { products, categories }

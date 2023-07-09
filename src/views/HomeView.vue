@@ -26,4 +26,5 @@
 import BannerComponent from '../components/BannerComponent.vue'
 import TheFeaturedCategories from '../components/TheFeaturedCategories.vue'
 import ImageBanner from '../components/ImageBanner.vue'
+import TheNewProducts from '../components/TheNewProducts.vue';
 </script>
