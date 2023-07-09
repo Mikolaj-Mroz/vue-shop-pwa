@@ -1,15 +1,13 @@
 <template>
-  <v-sheet
-    :color="color"
-  >
-    <v-img 
+  <v-sheet :color="color">
+    <v-img
       :src="image"
       cover
       :height="200"
       @click="$router.push('/featured')"
       gradient="to top, rgba(0,0,0,.5), rgba(0,0,0,0), rgba(0,0,0,0x)"
     >
-      <div 
+      <div
         class="text-center font-weight-bold text-body-1"
         style="position: absolute; bottom: 4px; width: 100%"
       >
@@ -20,7 +18,6 @@
 </template>
 
 <script setup>
-
 // eslint-disable-next-line no-unused-vars
 const props = defineProps({
   text: {
@@ -40,5 +37,4 @@ const props = defineProps({
     default: false
   }
 })
-
 </script>

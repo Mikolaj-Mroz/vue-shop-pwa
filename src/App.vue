@@ -1,6 +1,6 @@
 <script setup>
 import { RouterView } from 'vue-router'
-import TheTopNav from './components/TheTopNav.vue';
+import TheTopNav from './components/TheTopNav.vue'
 import TheBottomNav from './components/TheBottomNav.vue'
 </script>
 
