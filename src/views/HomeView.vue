@@ -7,12 +7,19 @@
 
   <ImageBanner
     text="Our choice for this season"
-    class="mt-12"
     image="/homepage/banner-1-photo.jpg"
     color="white"
+    class="mt-8"
   />
 
-  <TheFeaturedCategories class="mt-12" />
+  <TheFeaturedCategories class="mt-8" />
+
+  <ImageBanner
+    text="Do what you want to do"
+    image="/homepage/banner-2-photo.jpg"
+    color="white"
+    class="mt-8"
+  />
 </template>
 
 <script setup>
