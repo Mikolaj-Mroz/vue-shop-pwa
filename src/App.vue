@@ -7,7 +7,7 @@ import TheBottomNav from './components/TheBottomNav.vue'
 <template>
   <v-app>
     <TheTopNav />
-    <v-main class="px-4 mt-16 py-4">
+    <v-main class="px-4 my-16 py-4">
       <RouterView />
     </v-main>
     <TheBottomNav />
