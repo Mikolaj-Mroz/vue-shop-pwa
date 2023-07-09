@@ -13,6 +13,7 @@
             size="x-small"
             flat
             icon
+            color="transparent"
             style="position: absolute; right: 4px; bottom: 4px"
           >
             <v-icon size="x-large" color="red">mdi-heart</v-icon>
