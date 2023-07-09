@@ -14,3 +14,14 @@ export const useSnackbarStore = defineStore('snackbar', () => {
 
   return { snackbar, showSnackbar }
 })
+
+export const useUserStore = defineStore('user', () => {
+  const user = ref({
+    name: 'Mikołaj Mróz',
+    email: 'mikolajmroz.biz@gmail.com',
+    github: 'https://github.com/Mikolaj-Mroz',
+    avatar: '/user/avatar.png'
+  })
+
+  return { user }
+})

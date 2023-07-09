@@ -12,7 +12,7 @@
       <v-icon>mdi-cart-outline</v-icon>
     </v-btn>
 
-    <v-btn>
+    <v-btn to="/account">
       <v-icon>mdi-account-outline</v-icon>
     </v-btn>
   </v-bottom-navigation>
