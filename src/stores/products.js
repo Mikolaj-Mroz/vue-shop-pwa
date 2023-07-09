@@ -35,84 +35,108 @@ export const useProductsStore = defineStore('products', () => {
       "price": 79.99,
       "image": "/products/stellar-denim-jacket.jpg",
       "category": "For Him",
-      "subcategory": "Tops"
+      "subcategory": "Tops",
+      "size": "M",
+      "color": "Blue"
     },
     {
       "name": "Harmony Knit Sweater",
       "price": 59.99,
       "image": "/products/harmony-knit-sweater.jpg",
       "category": "For Her",
-      "subcategory": "Tops"
+      "subcategory": "Tops",
+      "size": "S",
+      "color": "Pink"
     },
     {
       "name": "Radiant Sun Dress",
       "price": 89.99,
       "image": "/products/radiant-sun-dress.jpg",
       "category": "For Her",
-      "subcategory": "Tops"
+      "subcategory": "Tops",
+      "size": "S",
+      "color": "White"
     },
     {
       "name": "Nova Active Leggings",
       "price": 69.99,
       "image": "/products/nova-active-leggings.jpg",
       "category": "For Her",
-      "subcategory": "Bottoms"
+      "subcategory": "Bottoms",
+      "size": "S",
+      "color": "Black"
     },
     {
       "name": "Blissful Linen Shirt",
       "price": 79.99,
       "image": "/products/blissful-linen-shirt.jpg",
       "category": "For Him",
-      "subcategory": "Tops"
+      "subcategory": "Tops",
+      "size": "M",
+      "color": "White"
     },
     {
       "name": "Cascade Waterfall Cardigan",
       "price": 69.99,
       "image": "/products/cascade-waterfall-cardigan.jpg",
       "category": "For Her",
-      "subcategory": "Tops"
+      "subcategory": "Tops",
+      "size": "S",
+      "color": "Pattern"
     },
     {
       "name": "Celestial Pleated Skirt",
       "price": 59.99,
       "image": "/products/celestial-pleated-skirt.jpg",
       "category": "For Her",
-      "subcategory": "Bottoms"
+      "subcategory": "Bottoms",
+      "size": "S",
+      "color": "Pattern"
     },
     {
       "name": "Aurora Performance Shorts",
       "price": 34.99,
       "image": "/products/aurora-performance-shorts.jpg",
       "category": "For Him",
-      "subcategory": "Bottoms"
+      "subcategory": "Bottoms",
+      "size": "M",
+      "color": "Pattern"
     },
     {
       "name": "Euphoria Embroidered Blouse",
       "price": 59.99,
       "image": "/products/euphoria-embroidered-blouse.jpg",
       "category": "For Kids",
-      "subcategory": "Tops"
+      "subcategory": "Tops",
+      "size": "S",
+      "color": "Pattern"
     },
     {
       "name": "Oasis Hiking Shoes",
       "price": 89.99,
       "image": "/products/oasis-hiking-shoes.jpg",
       "category": "For Kids",
-      "subcategory": "Shoes"
+      "subcategory": "Shoes",
+      "size": "36",
+      "color": "Pink"
     },
     {
       "name": "Essence Bamboo Socks",
       "price": 19.99,
       "image": "/products/essence-bamboo-socks.jpg",
       "category": "For Kids",
-      "subcategory": "Socks"
+      "subcategory": "Socks",
+      "size": "9",
+      "color": "Pattern"
     },
     {
       "name": "Nova Sportswear Bra",
       "price": 29.99,
       "image": "/products/nova-sportswear-bra.jpg",
       "category": "For Her",
-      "subcategory": "Tops"
+      "subcategory": "Tops",
+      "size": "S",
+      "color": "Black"
     },
   ])
 
