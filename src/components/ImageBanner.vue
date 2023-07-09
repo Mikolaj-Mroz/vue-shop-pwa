@@ -5,7 +5,7 @@
       cover
       :height="200"
       @click="$router.push('/featured')"
-      gradient="to top, rgba(0,0,0,.5), rgba(0,0,0,0), rgba(0,0,0,0x)"
+      gradient="to top, rgba(0,0,0,.5), rgba(0,0,0,0), rgba(0,0,0,0)"
     >
       <template v-slot:placeholder>
         <v-row class="fill-height ma-0" align="center" justify="center">
@@ -14,7 +14,7 @@
       </template>
       <div
         class="text-center font-weight-bold text-body-1"
-        style="position: absolute; bottom: 4px; width: 100%"
+        style="position: absolute; bottom: 8px; width: 100%"
         :style="color === 'white' ? 'color: white' : 'color: black'"
       >
         {{ text }}
