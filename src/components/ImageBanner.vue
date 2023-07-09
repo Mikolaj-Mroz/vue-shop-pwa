@@ -7,6 +7,7 @@
       cover
       :height="200"
       @click="$router.push('/featured')"
+      gradient="to top, rgba(0,0,0,.5), rgba(0,0,0,0), rgba(0,0,0,0x)"
     >
       <div 
         class="text-center font-weight-bold text-body-1"
