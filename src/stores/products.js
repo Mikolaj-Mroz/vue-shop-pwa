@@ -120,48 +120,7 @@ export const useProductsStore = defineStore('products', () => {
 })
 
 export const useCartStore = defineStore('cart', () => {
-  const cart = ref([
-    {
-      id: 1,
-      title: 'Nike Air Max 270 React ENG',
-      price: 170,
-      image: '/categories/man-shoes.jpg',
-      size: 'L',
-      color: 'White'
-    },
-    {
-      id: 1,
-      title: 'Nike Air Max 270 React ENG',
-      price: 170,
-      image: '/categories/man-shoes.jpg',
-      size: 'L',
-      color: 'White'
-    },
-    {
-      id: 1,
-      title: 'Nike Air Max 270 React ENG',
-      price: 170,
-      image: '/categories/man-shoes.jpg',
-      size: 'L',
-      color: 'White'
-    },
-    {
-      id: 1,
-      title: 'Nike Air Max 270 React ENG',
-      price: 170,
-      image: '/categories/man-shoes.jpg',
-      size: 'L',
-      color: 'White'
-    },
-    {
-      id: 1,
-      title: 'Nike Air Max 270 React ENG',
-      price: 170,
-      image: '/categories/man-shoes.jpg',
-      size: 'L',
-      color: 'White'
-    }
-  ])
+  const cart = ref([])
 
   const addToCart = (product) => {
     cart.value.push(product)
@@ -176,48 +135,7 @@ export const useCartStore = defineStore('cart', () => {
 })
 
 export const useWishlistStore = defineStore('wishlist', () => {
-  const wishlist = ref([
-    {
-      id: 1,
-      title: 'Nike Air Max 270 React ENG',
-      price: 170,
-      image: '/categories/man-shoes.jpg',
-      size: 'L',
-      color: 'White'
-    },
-    {
-      id: 1,
-      title: 'Nike Air Max 270 React ENG',
-      price: 170,
-      image: '/categories/man-shoes.jpg',
-      size: 'L',
-      color: 'White'
-    },
-    {
-      id: 1,
-      title: 'Nike Air Max 270 React ENG',
-      price: 170,
-      image: '/categories/man-shoes.jpg',
-      size: 'L',
-      color: 'White'
-    },
-    {
-      id: 1,
-      title: 'Nike Air Max 270 React ENG',
-      price: 170,
-      image: '/categories/man-shoes.jpg',
-      size: 'L',
-      color: 'White'
-    },
-    {
-      id: 1,
-      title: 'Nike Air Max 270 React ENG',
-      price: 170,
-      image: '/categories/man-shoes.jpg',
-      size: 'L',
-      color: 'White'
-    }
-  ])
+  const wishlist = ref([])
 
   const addToWishlist = (product) => {
     wishlist.value.push(product)
