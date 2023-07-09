@@ -1,5 +1,5 @@
 <template>
-  <v-sheet :color="color">
+  <v-sheet>
     <v-img
       :src="image"
       cover
@@ -15,6 +15,7 @@
       <div
         class="text-center font-weight-bold text-body-1"
         style="position: absolute; bottom: 4px; width: 100%"
+        :style="color === 'white' ? 'color: white' : 'color: black'"
       >
         {{ text }}
       </div>

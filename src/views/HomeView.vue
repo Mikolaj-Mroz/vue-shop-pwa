@@ -9,6 +9,7 @@
     text="Our choice for this season"
     class="mt-12"
     image="/homepage/banner-1-photo.jpg"
+    color="white"
   />
 
   <TheFeaturedCategories class="mt-12" />
