@@ -5,7 +5,7 @@
     :key="product.name"
     @remove="
       store.removeFromCart(product);
-      snackbarStore.showSnackbar('Product removed from cart', 'success')
+      snackbarStore.showSnackbar('Product removed from cart')
     "
   />
 </template>
