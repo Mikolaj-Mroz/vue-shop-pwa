@@ -1,5 +1,9 @@
 <template>
-  <v-snackbar v-model="snackbarStore.snackbar.show">
+  <v-snackbar 
+    v-model="snackbarStore.snackbar.show"
+    :timeout="1500"
+    location="top"
+  >
     {{ snackbarStore.snackbar.text }}
 
     <template v-slot:actions>
