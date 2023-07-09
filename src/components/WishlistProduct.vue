@@ -23,7 +23,7 @@
       <v-col cols="6" class="pa-4 pl-2">
         <v-row no-gutters>
           <v-col cols="12">
-            <h3 class="text-body-2 font-weight-medium">{{ product.title }}</h3>
+            <h3 class="text-body-2 font-weight-medium">{{ product.name }}</h3>
           </v-col>
         </v-row>
         <v-row no-gutters class="mt-2">
