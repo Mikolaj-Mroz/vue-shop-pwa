@@ -4,7 +4,7 @@
       <v-icon>mdi-home-outline</v-icon>
     </v-btn>
 
-    <v-btn>
+    <v-btn to="/wishlist">
       <v-icon>mdi-heart-outline</v-icon>
     </v-btn>
 
