@@ -39,7 +39,7 @@
         </v-row>
         <v-row no-gutters class="mt-2 text-right text-warning">
           <v-col cols="12">
-            <v-btn flat block @click="$emit('remove')">Remove</v-btn>
+            <v-btn flat block color="grey-lighten-2" @click="$emit('remove')">Remove</v-btn>
           </v-col>
         </v-row>
       </v-col>
