@@ -22,6 +22,13 @@
   />
 
   <TheNewProducts class="mt-8" />
+
+  <BannerComponent
+    text="Free shipping on orders over $100"
+    icon="mdi-truck-delivery-outline"
+    backgroundColor="primary"
+    class="mt-8"
+  />
 </template>
 
 <script setup>
