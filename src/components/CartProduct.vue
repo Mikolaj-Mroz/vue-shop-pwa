@@ -19,7 +19,7 @@
         <v-row no-gutters class="mt-2">
           <v-col cols="12">
             <span class="text-caption" style="line-height: 1rem"
-              >Price: <strong>{{ product.price }}$</strong></span
+              >Price: <strong>${{ product.price }}</strong></span
             >
           </v-col>
         </v-row>
