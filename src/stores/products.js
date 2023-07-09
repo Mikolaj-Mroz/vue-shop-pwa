@@ -4,27 +4,27 @@ import { defineStore } from 'pinia'
 export const useProductsStore = defineStore('products', () => {
   const categories = ref([
     {
-      title: 'For Him',
+      name: 'For Him',
       subcategories: [
-        { title: 'tops', image: '/categories/man-tops.jpg' },
-        { title: 'bottoms', image: '/categories/man-bottoms.jpg' },
-        { title: 'shoes', image: '/categories/man-shoes.jpg' }
+        { name: 'tops', image: '/categories/man-tops.jpg' },
+        { name: 'bottoms', image: '/categories/man-bottoms.jpg' },
+        { name: 'shoes', image: '/categories/man-shoes.jpg' }
       ]
     },
     {
-      title: 'For Her',
+      name: 'For Her',
       subcategories: [
-        { title: 'tops', image: '/categories/woman-tops.jpg' },
-        { title: 'bottoms', image: '/categories/woman-bottoms.jpg' },
-        { title: 'shoes', image: '/categories/woman-shoes.jpg' }
+        { name: 'tops', image: '/categories/woman-tops.jpg' },
+        { name: 'bottoms', image: '/categories/woman-bottoms.jpg' },
+        { name: 'shoes', image: '/categories/woman-shoes.jpg' }
       ]
     },
     {
-      title: 'For Kids',
+      name: 'For Kids',
       subcategories: [
-        { title: 'tops', image: '/categories/kid-tops.jpg' },
-        { title: 'bottoms', image: '/categories/kid-bottoms.jpg' },
-        { title: 'shoes', image: '/categories/kid-shoes.jpg' }
+        { name: 'tops', image: '/categories/kid-tops.jpg' },
+        { name: 'bottoms', image: '/categories/kid-bottoms.jpg' },
+        { name: 'shoes', image: '/categories/kid-shoes.jpg' }
       ]
     }
   ])

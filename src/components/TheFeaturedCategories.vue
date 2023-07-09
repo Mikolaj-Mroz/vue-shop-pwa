@@ -3,7 +3,7 @@
     <h2 class="text-h6 font-weight-bold">Featured categories</h2>
     <swiper :slides-per-view="3" :space-between="0">
       <template v-for="category in productsStore.categories">
-        <swiper-slide v-for="subcategory in category.subcategories" :key="subcategory.title">
+        <swiper-slide v-for="subcategory in category.subcategories" :key="subcategory.name">
           <v-sheet class="pa-4">
             <v-row no-gutters class="d-flex align-center justify-center">
               <v-avatar size="64px">
@@ -21,12 +21,12 @@
             </v-row>
             <v-row no-gutters class="mt-2 text-capitalize text-center text-caption">
               <v-col cols="12">
-                {{ category.title }}
+                {{ category.name }}
               </v-col>
             </v-row>
             <v-row no-gutters class="font-weight-bold text-capitalize text-center text-body-2">
               <v-col cols="12">
-                {{ subcategory.title }}
+                {{ subcategory.name }}
               </v-col>
             </v-row>
           </v-sheet>
