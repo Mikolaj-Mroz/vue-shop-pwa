@@ -29,6 +29,13 @@
     backgroundColor="primary"
     class="mt-8"
   />
+
+  <ImageBanner
+    text="We are here to help you"
+    image="/homepage/banner-3-photo.jpg"
+    color="white"
+    class="mt-8"
+  />
 </template>
 
 <script setup>
