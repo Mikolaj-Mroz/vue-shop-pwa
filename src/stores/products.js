@@ -62,3 +62,59 @@ export const useProductsStore = defineStore('products', () => {
 
   return { products, categories }
 })
+
+export const useCartStore = defineStore('cart', () => {
+  const cart = ref([
+    {
+      id: 1,
+      title: 'Nike Air Max 270 React ENG',
+      price: 170,
+      image: '/categories/man-shoes.jpg',
+      size: 'L',
+      color: 'White'
+    },
+    {
+      id: 1,
+      title: 'Nike Air Max 270 React ENG',
+      price: 170,
+      image: '/categories/man-shoes.jpg',
+      size: 'L',
+      color: 'White'
+    },
+    {
+      id: 1,
+      title: 'Nike Air Max 270 React ENG',
+      price: 170,
+      image: '/categories/man-shoes.jpg',
+      size: 'L',
+      color: 'White'
+    },
+    {
+      id: 1,
+      title: 'Nike Air Max 270 React ENG',
+      price: 170,
+      image: '/categories/man-shoes.jpg',
+      size: 'L',
+      color: 'White'
+    },
+    {
+      id: 1,
+      title: 'Nike Air Max 270 React ENG',
+      price: 170,
+      image: '/categories/man-shoes.jpg',
+      size: 'L',
+      color: 'White'
+    }
+  ])
+
+  const addToCart = (product) => {
+    cart.value.push(product)
+  }
+
+  const removeFromCart = (product) => {
+    const index = cart.value.indexOf(product)
+    cart.value.splice(index, 1)
+  }
+
+  return { cart, addToCart, removeFromCart }
+})
