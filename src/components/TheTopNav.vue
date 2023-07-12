@@ -45,13 +45,11 @@
   import { ref } from 'vue'
   import { useProductsStore } from '../stores/products'
 
-  const drawer = ref(false)
-
   const store = useProductsStore()
 
+  // drawer logic
+  const drawer = ref(false)
   const open = ref([])
-
-
   const buttons = ['My reviews', 'My addresses', 'My settings', 'Customer service', 'Logout']
   
 </script>
