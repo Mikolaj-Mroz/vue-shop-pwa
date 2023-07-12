@@ -23,7 +23,12 @@ const router = createRouter({
       path: '/wishlist',
       name: 'wishlist',
       component: () => import('../views/WishlistView.vue')
-    }
+    },
+    {
+      path: '/search/:search',
+      name: 'search',
+      component: () => import('../views/SearchView.vue')
+    },
   ]
 })
 

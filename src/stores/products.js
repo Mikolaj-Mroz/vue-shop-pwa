@@ -140,7 +140,14 @@ export const useProductsStore = defineStore('products', () => {
     },
   ])
 
-  return { products, categories }
+  const getProductsByCategory = (category) => {
+    return products.value.filter(product => product.category === category)}
+
+  const searchProducts = (query) => {
+    return products.value.filter(product => product.name.toLowerCase().includes(query.toLowerCase()))
+  }
+
+  return { products, categories, getProductsByCategory, searchProducts }
 })
 
 export const useCartStore = defineStore('cart', () => {

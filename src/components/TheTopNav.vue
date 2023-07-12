@@ -1,7 +1,30 @@
 <template>
   <v-app-bar flat>
     <v-toolbar app>
-      <v-btn @click="drawer = !drawer" icon="mdi-menu"></v-btn>
+
+      <template v-slot:prepend>
+        <v-btn @click="drawer = !drawer" icon="mdi-menu"></v-btn>
+      </template>
+
+      <v-form @submit.prevent="$router.push({name: 'search', params: { search: searchData } })">
+        <v-text-field 
+          v-if="searchBar"
+          single-line 
+          hide-details
+          solo
+          rounded
+          density="compact"
+          label="Search"
+          required
+          v-model="searchData"
+        >
+        </v-text-field>
+      </v-form>
+
+      <template v-slot:append>
+        <v-btn @click="searchBar = !searchBar" icon="mdi-magnify"></v-btn>
+      </template>
+
     </v-toolbar>
   </v-app-bar>
 
@@ -51,11 +74,34 @@
   const drawer = ref(false)
   const open = ref([])
   const buttons = ['My reviews', 'My addresses', 'My settings', 'Customer service', 'Logout']
+
+  // search bar logic
+  const searchBar = ref(false)
+  const searchData = ref(null)
   
 </script>
 
 <style scoped>
 .v-list-group__items .v-list-item {
   padding-inline-start: 20px !important;
+}
+</style>
+
+<style>
+
+/* Remove outline from v-text-field */
+.v-field__outline::before {
+  border-style: none !important;
+}
+.v-field__outline::after {
+  border-style: none !important;
+}
+
+.v-field.v-field--focused::before {
+  border-style: none !important;
+}
+
+.v-field.v-field--focused::after {
+  border-style: none !important;
 }
 </style>
