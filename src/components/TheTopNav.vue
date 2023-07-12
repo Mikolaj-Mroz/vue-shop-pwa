@@ -1,7 +1,7 @@
 <template>
   <v-app-bar flat>
     <v-toolbar app>
-      <v-toolbar-title class="font-weight-bold text-capitalize" v-if="title !== 'home' || title !=='search'">{{ title }}</v-toolbar-title>
+      <v-toolbar-title class="font-weight-bold text-capitalize" v-if="title !== 'home' && title !=='search'">{{ title }}</v-toolbar-title>
 
       <template v-if="title === 'home' || title ==='search'" v-slot:prepend>
         <v-btn @click="drawer = !drawer" icon="mdi-menu"></v-btn>
