@@ -1,15 +1,18 @@
 <template>
   <v-app-bar flat>
     <v-toolbar app>
-      <v-toolbar-title class="font-weight-bold text-capitalize" v-if="title !== 'home' ">{{ title }}</v-toolbar-title>
+      <v-toolbar-title class="font-weight-bold text-capitalize" v-if="title !== 'home' || title !=='search'">{{ title }}</v-toolbar-title>
 
-      <template v-if="title === 'home' " v-slot:prepend>
+      <template v-if="title === 'home' || title ==='search'" v-slot:prepend>
         <v-btn @click="drawer = !drawer" icon="mdi-menu"></v-btn>
       </template>
 
-      <v-form @submit.prevent="$router.push({name: 'search', params: { search: searchData } })">
+      <v-form
+        style="width: 100%;"
+        v-if="searchBar & title === 'home' || title ==='search'"
+        @submit.prevent="$router.push({name: 'search', params: { search: searchData } })"
+      >
         <v-text-field 
-          v-if="searchBar"
           single-line 
           hide-details
           solo
@@ -22,7 +25,7 @@
         </v-text-field>
       </v-form>
 
-      <template v-slot:append>
+      <template v-if="title === 'home' || title ==='search'" v-slot:append>
         <v-btn @click="searchBar = !searchBar" icon="mdi-magnify"></v-btn>
       </template>
 

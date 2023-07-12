@@ -26,7 +26,7 @@ const route = useRoute()
 const products = ref(store.searchProducts(route.params.search))
 
 watch(() => route.params.search, (newVal) => {
-  products.value = store.searchProducts(newVal)
+  if ( newVal ) { products.value = store.searchProducts(newVal) }
 })
 
 </script>
