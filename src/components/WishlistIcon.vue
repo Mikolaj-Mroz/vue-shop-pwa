@@ -8,7 +8,7 @@
     color="transparent"
     style="position: absolute; right: 4px; bottom: 4px"
   >
-    <v-icon size="x-large" :color="wishlisted?'important' : 'white' ">{{wishlisted? 'mdi-heart':'mdi-heart-outline' }}</v-icon>
+    <v-icon size="x-large" :color="wishlisted?'warning' : 'white' ">{{wishlisted? 'mdi-heart':'mdi-heart-outline' }}</v-icon>
   </v-btn>
 </template>
 

@@ -6,9 +6,9 @@
       <!--Choose Filter-->
     </template>
     <v-chip-group v-model="filter" @update:modelValue="filterProducts()">
-      <v-chip filter :variant="filter === 0 ? 'elevated' : 'outlined' " color="primary">For Him</v-chip>
-      <v-chip filter :variant="filter === 1 ? 'elevated' : 'outlined' " color="primary">For Her</v-chip>
-      <v-chip filter :variant="filter === 2 ? 'elevated' : 'outlined' " color="primary">For Kids</v-chip>
+      <v-chip filter :variant="filter === 0 ? 'elevated' : 'outlined' " color="secondary">For Him</v-chip>
+      <v-chip filter :variant="filter === 1 ? 'elevated' : 'outlined' " color="secondary">For Her</v-chip>
+      <v-chip filter :variant="filter === 2 ? 'elevated' : 'outlined' " color="secondary">For Kids</v-chip>
     </v-chip-group>
 
     <template>

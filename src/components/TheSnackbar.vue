@@ -1,8 +1,11 @@
 <template>
-  <v-snackbar 
+  <v-snackbar
+    class="px-4" 
     v-model="snackbarStore.snackbar.show"
-    :timeout="1500"
+    :timeout="120500"
     location="top"
+    :min-width="304"
+    color="important"
   >
     {{ snackbarStore.snackbar.text }}
 
