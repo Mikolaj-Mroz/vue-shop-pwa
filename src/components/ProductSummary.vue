@@ -9,6 +9,7 @@
             </v-row>
           </template>
           <v-btn
+            v-if="iconLeft"
             @click="$emit('remove')"
             size="x-small"
             flat
@@ -16,36 +17,31 @@
             color="transparent"
             style="position: absolute; right: 4px; bottom: 4px"
           >
-            <v-icon size="x-large" color="red">mdi-heart</v-icon>
+            <v-icon size="x-large" color="red">mdi-{{icon}}</v-icon>
           </v-btn>
         </v-img>
       </v-col>
-      <v-col cols="6" class="pa-4 pl-2">
-        <v-row no-gutters>
-          <v-col cols="12">
-            <h3 class="text-body-2 font-weight-medium">{{ product.name }}</h3>
-          </v-col>
-        </v-row>
-        <v-row no-gutters class="mt-2">
-          <v-col cols="12">
-            <span class="text-caption" style="line-height: 1rem"
-              >Price: <strong>${{ product.price }}</strong></span
-            >
-          </v-col>
-        </v-row>
-        <v-row no-gutters class="mt-n2">
-          <v-col cols="12">
-            <span class="text-caption"
-              >Size: <strong>{{ product.size }}</strong></span
-            >
-          </v-col>
-        </v-row>
-        <v-row no-gutters class="mt-n2">
-          <v-col cols="12">
-            <span class="text-caption"
-              >Color: <strong>{{ product.color }}</strong></span
-            >
-          </v-col>
+      <v-col cols="6" class="pa-4 pl-2 d-flex flex-column">
+        <h3 class="text-caption text-truncate" style="line-height: 1rem">{{ product.name }}</h3>
+        <span 
+          class="text-caption mt-4" 
+          style="line-height: 1rem"
+        >
+          Price: <strong>${{ product.price }}</strong><br>
+          Size: <strong>{{ product.size }}</strong><br>
+          Color: <strong>{{ product.color }}</strong>
+        </span>
+        <v-row class="d-flex align-end justify-end">
+          <v-btn
+            v-if="!iconLeft"
+            @click="$emit('remove')"
+            size="x-small"
+            flat
+            icon
+            color="transparent"
+          >
+            <v-icon size="x-large" color="black">mdi-{{icon}}</v-icon>
+          </v-btn>
         </v-row>
       </v-col>
     </v-row>
@@ -58,6 +54,14 @@ const props = defineProps({
   product: {
     type: Object,
     required: true
+  },
+  icon: {
+    type: String,
+    required: true
+  },
+  iconLeft: {
+    type: Boolean,
+    default: false
   }
 })
 

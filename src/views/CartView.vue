@@ -4,8 +4,9 @@
       <span class="text-h6">Your cart is empty</span>
     </v-col>
   </v-row>
-  <CartProduct
+  <ProductSummary
     v-for="product in store.cart"
+    icon="delete"
     :product="product"
     :key="product.name"
     @remove="
@@ -16,7 +17,7 @@
 </template>
 
 <script setup>
-import CartProduct from '../components/CartProduct.vue'
+import ProductSummary from '../components/ProductSummary.vue'
 
 import { useSnackbarStore } from '../stores/functionality'
 import { useCartStore } from '../stores/products'

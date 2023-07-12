@@ -4,9 +4,11 @@
       <span class="text-h6">Your wishlist is empty</span>
     </v-col>
   </v-row>
-  <WishlistProduct
+  <ProductSummary
     v-for="product in store.wishlist"
     :product="product"
+    icon="heart"
+    iconLeft
     :key="product.name"
     @remove="
       store.removeFromWishlist(product);
@@ -16,7 +18,7 @@
 </template>
 
 <script setup>
-import WishlistProduct from '../components/WishlistProduct.vue'
+import ProductSummary from '../components/ProductSummary.vue';
 
 import { useSnackbarStore } from '../stores/functionality'
 import { useWishlistStore } from '../stores/products'
