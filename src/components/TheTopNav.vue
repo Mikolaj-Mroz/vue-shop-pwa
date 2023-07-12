@@ -1,8 +1,9 @@
 <template>
   <v-app-bar flat>
     <v-toolbar app>
+      <v-toolbar-title class="font-weight-bold text-capitalize" v-if="title !== 'home' ">{{ title }}</v-toolbar-title>
 
-      <template v-slot:prepend>
+      <template v-if="title === 'home' " v-slot:prepend>
         <v-btn @click="drawer = !drawer" icon="mdi-menu"></v-btn>
       </template>
 
@@ -32,6 +33,7 @@
     <!--left side nav panel-->
   </template>
   <v-navigation-drawer
+    v-if="title === 'home'"
     v-model="drawer"
   >
     <v-list v-model:opened="open">
@@ -65,8 +67,9 @@
 </template>
 
 <script setup>
-  import { ref } from 'vue'
+  import { ref, watch } from 'vue'
   import { useProductsStore } from '../stores/products'
+  import { useRoute } from 'vue-router';
 
   const store = useProductsStore()
 
@@ -79,6 +82,13 @@
   const searchBar = ref(false)
   const searchData = ref(null)
   
+  // title logic
+  const route = useRoute()
+  const title = ref(route.name)
+
+  watch(() => route.name, (newVal) => {
+    title.value = newVal
+  })
 </script>
 
 <style scoped>
