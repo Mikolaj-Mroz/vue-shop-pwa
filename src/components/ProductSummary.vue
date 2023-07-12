@@ -8,17 +8,12 @@
               <v-progress-circular indeterminate color="grey-lighten-5"></v-progress-circular>
             </v-row>
           </template>
-          <v-btn
+          <wishlist-icon 
             v-if="iconLeft"
             @click="$emit('remove')"
-            size="x-small"
-            flat
-            icon
-            color="transparent"
+            :wishlisted="true" 
             style="position: absolute; right: 4px; bottom: 4px"
-          >
-            <v-icon size="x-large" color="red">mdi-{{icon}}</v-icon>
-          </v-btn>
+          />
         </v-img>
       </v-col>
       <v-col cols="6" class="pa-4 pl-2 d-flex flex-column">
@@ -49,6 +44,8 @@
 </template>
 
 <script setup>
+import WishlistIcon from './WishlistIcon.vue';
+
 // eslint-disable-next-line no-unused-vars
 const props = defineProps({
   product: {

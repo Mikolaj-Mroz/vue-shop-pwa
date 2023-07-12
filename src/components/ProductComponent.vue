@@ -12,17 +12,10 @@
           <template>
             <!--Add, or remove wishlist button-->
           </template>
-          <v-btn
+          <wishlist-icon 
             @click="changeWishlist(product)"
-            size="x-small"
-            flat
-            icon
-            :ripple="false"
-            color="transparent"
-            style="position: absolute; right: 4px; bottom: 4px"
-          >
-            <v-icon size="x-large" color="red">{{wishlist.wishlist.includes(product)? 'mdi-heart':'mdi-heart-outline' }}</v-icon>
-          </v-btn>
+            :wishlisted="wishlist.wishlist.includes(product)" 
+          />
 
         </v-img>
       </v-col>
@@ -35,6 +28,7 @@
 </template>
 
 <script setup>
+import WishlistIcon from './WishlistIcon.vue';
 import { useWishlistStore } from '../stores/products';
 
 
