@@ -23,7 +23,6 @@
           style="line-height: 1rem"
         >
           Price: <strong>${{ product.price }}</strong><br>
-          Size: <strong>{{ product.size }}</strong><br>
           Color: <strong>{{ product.color }}</strong>
         </span>
         <v-row class="d-flex align-end justify-end">
