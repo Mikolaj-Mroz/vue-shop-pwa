@@ -36,10 +36,10 @@ export const useProductsStore = defineStore('products', () => {
       image: "/products/stellar-denim-jacket.jpg",
       category: "For Him",
       subcategory: "Tops",
-      size: "M",
       color: "Blue",
       rating: 4.5,
-      reviews: 12
+      reviews: 12,
+      sizes: ["S", "M", "L", "XL"]
     },
     {
       name: "Harmony Knit Sweater",
@@ -47,10 +47,10 @@ export const useProductsStore = defineStore('products', () => {
       image: "/products/harmony-knit-sweater.jpg",
       category: "For Her",
       subcategory: "Tops",
-      size: "S",
       color: "Pink",
       rating: 4,
-      reviews: 8
+      reviews: 8,
+      sizes: ["S", "M", "L", "XL"]
     },
     {
       name: "Radiant Sun Dress",
@@ -58,10 +58,10 @@ export const useProductsStore = defineStore('products', () => {
       image: "/products/radiant-sun-dress.jpg",
       category: "For Her",
       subcategory: "Tops",
-      size: "S",
       color: "White",
       rating: 3,
-      reviews: 4
+      reviews: 4,
+      sizes: ["S", "M", "L", "XL"]
     },
     {
       name: "Nova Active Leggings",
@@ -69,10 +69,10 @@ export const useProductsStore = defineStore('products', () => {
       image: "/products/nova-active-leggings.jpg",
       category: "For Her",
       subcategory: "Bottoms",
-      size: "S",
       color: "Black",
       rating: 5,
-      reviews: 16
+      reviews: 16,
+      sizes: ["S", "M", "L", "XL"]
     },
     {
       name: "Blissful Linen Shirt",
@@ -80,10 +80,10 @@ export const useProductsStore = defineStore('products', () => {
       image: "/products/blissful-linen-shirt.jpg",
       category: "For Him",
       subcategory: "Tops",
-      size: "M",
       color: "White",
       rating: 4.5,
-      reviews: 12
+      reviews: 12,
+      sizes: ["S", "M", "L", "XL"]
     },
     {
       name: "Cascade Waterfall Cardigan",
@@ -91,10 +91,10 @@ export const useProductsStore = defineStore('products', () => {
       image: "/products/cascade-waterfall-cardigan.jpg",
       category: "For Her",
       subcategory: "Tops",
-      size: "S",
       color: "Pattern",
       rating: 4,
-      reviews: 8
+      reviews: 8,
+      sizes: ["S", "M", "L", "XL"]
     },
     {
       name: "Celestial Pleated Skirt",
@@ -102,10 +102,10 @@ export const useProductsStore = defineStore('products', () => {
       image: "/products/celestial-pleated-skirt.jpg",
       category: "For Her",
       subcategory: "Bottoms",
-      size: "S",
       color: "Pattern",
       rating: 3,
-      reviews: 4
+      reviews: 4,
+      sizes: ["S", "M", "L", "XL"]
     },
     {
       name: "Aurora Performance Shorts",
@@ -113,10 +113,10 @@ export const useProductsStore = defineStore('products', () => {
       image: "/products/aurora-performance-shorts.jpg",
       category: "For Him",
       subcategory: "Bottoms",
-      size: "M",
       color: "Pattern",
       rating: 5,
-      reviews: 16
+      reviews: 16,
+      sizes: ["S", "M", "L", "XL"]
     },
     {
       name: "Euphoria Embroidered Blouse",
@@ -124,10 +124,10 @@ export const useProductsStore = defineStore('products', () => {
       image: "/products/euphoria-embroidered-blouse.jpg",
       category: "For Kids",
       subcategory: "Tops",
-      size: "S",
       color: "Pattern",
       rating: 4.5,
-      reviews: 12
+      reviews: 12,
+      sizes: ["S", "M", "L", "XL"]
     },
     {
       name: "Oasis Hiking Shoes",
@@ -135,10 +135,10 @@ export const useProductsStore = defineStore('products', () => {
       image: "/products/oasis-hiking-shoes.jpg",
       category: "For Kids",
       subcategory: "Shoes",
-      size: "36",
       color: "Pink",
       rating: 4,
-      reviews: 8
+      reviews: 8,
+      sizes: [28, 29, 30, 31, 32, 33, 34]
     },
     {
       name: "Essence Bamboo Socks",
@@ -146,10 +146,10 @@ export const useProductsStore = defineStore('products', () => {
       image: "/products/essence-bamboo-socks.jpg",
       category: "For Kids",
       subcategory: "Socks",
-      size: "9",
       color: "Pattern",
       rating: 3,
-      reviews: 4
+      reviews: 4,
+      sizes: ["S", "M", "L", "XL"]
     },
     {
       name: "Nova Sportswear Bra",
@@ -157,10 +157,10 @@ export const useProductsStore = defineStore('products', () => {
       image: "/products/nova-sportswear-bra.jpg",
       category: "For Her",
       subcategory: "Tops",
-      size: "S",
       color: "Black",
       rating: 5,
-      reviews: 16
+      reviews: 16,
+      sizes: ['80B', '85B', '90B', '95B', '70C', '75C', '80C', '85C', '90C', '95C']
     },
   ])
 
