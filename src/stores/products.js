@@ -31,114 +31,142 @@ export const useProductsStore = defineStore('products', () => {
 
   const products = ref([
     {
-      "name": "Stellar Denim Jacket",
-      "price": 79.99,
-      "image": "/products/stellar-denim-jacket.jpg",
-      "category": "For Him",
-      "subcategory": "Tops",
-      "size": "M",
-      "color": "Blue"
+      name: "Stellar Denim Jacket",
+      price: 79.99,
+      image: "/products/stellar-denim-jacket.jpg",
+      category: "For Him",
+      subcategory: "Tops",
+      size: "M",
+      color: "Blue",
+      rating: 4.5,
+      reviews: 12
     },
     {
-      "name": "Harmony Knit Sweater",
-      "price": 59.99,
-      "image": "/products/harmony-knit-sweater.jpg",
-      "category": "For Her",
-      "subcategory": "Tops",
-      "size": "S",
-      "color": "Pink"
+      name: "Harmony Knit Sweater",
+      price: 59.99,
+      image: "/products/harmony-knit-sweater.jpg",
+      category: "For Her",
+      subcategory: "Tops",
+      size: "S",
+      color: "Pink",
+      rating: 4,
+      reviews: 8
     },
     {
-      "name": "Radiant Sun Dress",
-      "price": 89.99,
-      "image": "/products/radiant-sun-dress.jpg",
-      "category": "For Her",
-      "subcategory": "Tops",
-      "size": "S",
-      "color": "White"
+      name: "Radiant Sun Dress",
+      price: 89.99,
+      image: "/products/radiant-sun-dress.jpg",
+      category: "For Her",
+      subcategory: "Tops",
+      size: "S",
+      color: "White",
+      rating: 3,
+      reviews: 4
     },
     {
-      "name": "Nova Active Leggings",
-      "price": 69.99,
-      "image": "/products/nova-active-leggings.jpg",
-      "category": "For Her",
-      "subcategory": "Bottoms",
-      "size": "S",
-      "color": "Black"
+      name: "Nova Active Leggings",
+      price: 69.99,
+      image: "/products/nova-active-leggings.jpg",
+      category: "For Her",
+      subcategory: "Bottoms",
+      size: "S",
+      color: "Black",
+      rating: 5,
+      reviews: 16
     },
     {
-      "name": "Blissful Linen Shirt",
-      "price": 79.99,
-      "image": "/products/blissful-linen-shirt.jpg",
-      "category": "For Him",
-      "subcategory": "Tops",
-      "size": "M",
-      "color": "White"
+      name: "Blissful Linen Shirt",
+      price: 79.99,
+      image: "/products/blissful-linen-shirt.jpg",
+      category: "For Him",
+      subcategory: "Tops",
+      size: "M",
+      color: "White",
+      rating: 4.5,
+      reviews: 12
     },
     {
-      "name": "Cascade Waterfall Cardigan",
-      "price": 69.99,
-      "image": "/products/cascade-waterfall-cardigan.jpg",
-      "category": "For Her",
-      "subcategory": "Tops",
-      "size": "S",
-      "color": "Pattern"
+      name: "Cascade Waterfall Cardigan",
+      price: 69.99,
+      image: "/products/cascade-waterfall-cardigan.jpg",
+      category: "For Her",
+      subcategory: "Tops",
+      size: "S",
+      color: "Pattern",
+      rating: 4,
+      reviews: 8
     },
     {
-      "name": "Celestial Pleated Skirt",
-      "price": 59.99,
-      "image": "/products/celestial-pleated-skirt.jpg",
-      "category": "For Her",
-      "subcategory": "Bottoms",
-      "size": "S",
-      "color": "Pattern"
+      name: "Celestial Pleated Skirt",
+      price: 59.99,
+      image: "/products/celestial-pleated-skirt.jpg",
+      category: "For Her",
+      subcategory: "Bottoms",
+      size: "S",
+      color: "Pattern",
+      rating: 3,
+      reviews: 4
     },
     {
-      "name": "Aurora Performance Shorts",
-      "price": 34.99,
-      "image": "/products/aurora-performance-shorts.jpg",
-      "category": "For Him",
-      "subcategory": "Bottoms",
-      "size": "M",
-      "color": "Pattern"
+      name: "Aurora Performance Shorts",
+      price: 34.99,
+      image: "/products/aurora-performance-shorts.jpg",
+      category: "For Him",
+      subcategory: "Bottoms",
+      size: "M",
+      color: "Pattern",
+      rating: 5,
+      reviews: 16
     },
     {
-      "name": "Euphoria Embroidered Blouse",
-      "price": 59.99,
-      "image": "/products/euphoria-embroidered-blouse.jpg",
-      "category": "For Kids",
-      "subcategory": "Tops",
-      "size": "S",
-      "color": "Pattern"
+      name: "Euphoria Embroidered Blouse",
+      price: 59.99,
+      image: "/products/euphoria-embroidered-blouse.jpg",
+      category: "For Kids",
+      subcategory: "Tops",
+      size: "S",
+      color: "Pattern",
+      rating: 4.5,
+      reviews: 12
     },
     {
-      "name": "Oasis Hiking Shoes",
-      "price": 89.99,
-      "image": "/products/oasis-hiking-shoes.jpg",
-      "category": "For Kids",
-      "subcategory": "Shoes",
-      "size": "36",
-      "color": "Pink"
+      name: "Oasis Hiking Shoes",
+      price: 89.99,
+      image: "/products/oasis-hiking-shoes.jpg",
+      category: "For Kids",
+      subcategory: "Shoes",
+      size: "36",
+      color: "Pink",
+      rating: 4,
+      reviews: 8
     },
     {
-      "name": "Essence Bamboo Socks",
-      "price": 19.99,
-      "image": "/products/essence-bamboo-socks.jpg",
-      "category": "For Kids",
-      "subcategory": "Socks",
-      "size": "9",
-      "color": "Pattern"
+      name: "Essence Bamboo Socks",
+      price: 19.99,
+      image: "/products/essence-bamboo-socks.jpg",
+      category: "For Kids",
+      subcategory: "Socks",
+      size: "9",
+      color: "Pattern",
+      rating: 3,
+      reviews: 4
     },
     {
-      "name": "Nova Sportswear Bra",
-      "price": 29.99,
-      "image": "/products/nova-sportswear-bra.jpg",
-      "category": "For Her",
-      "subcategory": "Tops",
-      "size": "S",
-      "color": "Black"
+      name: "Nova Sportswear Bra",
+      price: 29.99,
+      image: "/products/nova-sportswear-bra.jpg",
+      category: "For Her",
+      subcategory: "Tops",
+      size: "S",
+      color: "Black",
+      rating: 5,
+      reviews: 16
     },
   ])
+
+  const getProductByName = (name) => {
+    return products.value.find(product => product.name === name)
+  }
 
   const getProductsByCategory = (category) => {
     return products.value.filter(product => product.category === category)}
@@ -147,7 +175,7 @@ export const useProductsStore = defineStore('products', () => {
     return products.value.filter(product => product.name.toLowerCase().includes(query.toLowerCase()))
   }
 
-  return { products, categories, getProductsByCategory, searchProducts }
+  return { products, categories, getProductByName ,getProductsByCategory, searchProducts }
 })
 
 export const useCartStore = defineStore('cart', () => {
